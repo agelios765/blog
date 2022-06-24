@@ -41,7 +41,8 @@ export default {
   components: {},
   props: [
     'login'
-  ]
+  ],
+  layout: null,
 }
 </script>
 
