@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth')->group(function () {
-    Route::get('/', function () {
-        return inertia('Welcome');
-    });
+Route::get('/', function () {
+    return inertia('Welcome');
 });
 
 Route::middleware('guest')->group(function () {
