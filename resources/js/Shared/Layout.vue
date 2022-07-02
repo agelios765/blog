@@ -1,7 +1,7 @@
 <template>
   <section class="w-full px-6 pb-12 antialiased">
     <div class="mx-auto max-w-8xl">
-      <Header></Header>
+      <Header :translations="translations"></Header>
       <div class="mt-16">
         <slot></slot>
       </div>
@@ -16,6 +16,7 @@ import Footer from "./Footer";
 
 export default {
   name: "Layout",
-  components: {Footer, Header}
+  components: {Footer, Header},
+  props: ['translations']
 }
 </script>
